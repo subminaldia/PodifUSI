@@ -15,7 +15,6 @@ jobs:
     steps:
       - name: Check domain SSL and registry expire date
         id: check-domain
-        uses: codex-team/action-check-domain@v1
         with:
           url: ${{ matrix.domain }}
       - name: Raise issue if domain expiring soon
